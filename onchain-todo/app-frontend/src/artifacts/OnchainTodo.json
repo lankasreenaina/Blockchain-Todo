@@ -1,0 +1,352 @@
+{
+  "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "abi": [
+    {
+      "type": "event",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "baseType": "address",
+          "indexed": true,
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        },
+        {
+          "name": "id",
+          "type": "uint256",
+          "baseType": "uint256",
+          "indexed": false,
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "baseType": "string",
+          "indexed": false,
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        },
+        {
+          "name": "timestamp",
+          "type": "uint256",
+          "baseType": "uint256",
+          "indexed": false,
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        }
+      ],
+      "name": "TaskCreated",
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "baseType": "address",
+          "indexed": true,
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        },
+        {
+          "name": "id",
+          "type": "uint256",
+          "baseType": "uint256",
+          "indexed": false,
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        },
+        {
+          "name": "timestamp",
+          "type": "uint256",
+          "baseType": "uint256",
+          "indexed": false,
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        }
+      ],
+      "name": "TaskDeleted",
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "baseType": "address",
+          "indexed": true,
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        },
+        {
+          "name": "id",
+          "type": "uint256",
+          "baseType": "uint256",
+          "indexed": false,
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        },
+        {
+          "name": "completed",
+          "type": "bool",
+          "baseType": "bool",
+          "indexed": false,
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        },
+        {
+          "name": "timestamp",
+          "type": "uint256",
+          "baseType": "uint256",
+          "indexed": false,
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        }
+      ],
+      "name": "TaskUpdated",
+      "anonymous": false
+    },
+    {
+      "type": "function",
+      "inputs": [
+        {
+          "name": "content",
+          "type": "string",
+          "baseType": "string",
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        }
+      ],
+      "name": "createTask",
+      "constant": false,
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "payable": false,
+      "gas": null
+    },
+    {
+      "type": "function",
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256",
+          "baseType": "uint256",
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        }
+      ],
+      "name": "deleteTask",
+      "constant": false,
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "payable": false,
+      "gas": null
+    },
+    {
+      "type": "function",
+      "inputs": [],
+      "name": "getMyTasks",
+      "constant": true,
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple[]",
+          "baseType": "array",
+          "components": null,
+          "arrayLength": -1,
+          "arrayChildren": {
+            "name": "",
+            "type": "tuple",
+            "baseType": "tuple",
+            "components": [
+              {
+                "name": "id",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+              },
+              {
+                "name": "content",
+                "type": "string",
+                "baseType": "string",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+              },
+              {
+                "name": "completed",
+                "type": "bool",
+                "baseType": "bool",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+              },
+              {
+                "name": "createdAt",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+              },
+              {
+                "name": "updatedAt",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+              }
+            ],
+            "arrayLength": null,
+            "arrayChildren": null
+          }
+        }
+      ],
+      "stateMutability": "view",
+      "payable": false,
+      "gas": null
+    },
+    {
+      "type": "function",
+      "inputs": [
+        {
+          "name": "offset",
+          "type": "uint256",
+          "baseType": "uint256",
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        },
+        {
+          "name": "limit",
+          "type": "uint256",
+          "baseType": "uint256",
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        }
+      ],
+      "name": "getMyTasks",
+      "constant": true,
+      "outputs": [
+        {
+          "name": "out",
+          "type": "tuple[]",
+          "baseType": "array",
+          "components": null,
+          "arrayLength": -1,
+          "arrayChildren": {
+            "name": "",
+            "type": "tuple",
+            "baseType": "tuple",
+            "components": [
+              {
+                "name": "id",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+              },
+              {
+                "name": "content",
+                "type": "string",
+                "baseType": "string",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+              },
+              {
+                "name": "completed",
+                "type": "bool",
+                "baseType": "bool",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+              },
+              {
+                "name": "createdAt",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+              },
+              {
+                "name": "updatedAt",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+              }
+            ],
+            "arrayLength": null,
+            "arrayChildren": null
+          }
+        }
+      ],
+      "stateMutability": "view",
+      "payable": false,
+      "gas": null
+    },
+    {
+      "type": "function",
+      "inputs": [],
+      "name": "getTaskCount",
+      "constant": true,
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "baseType": "uint256",
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        }
+      ],
+      "stateMutability": "view",
+      "payable": false,
+      "gas": null
+    },
+    {
+      "type": "function",
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256",
+          "baseType": "uint256",
+          "components": null,
+          "arrayLength": null,
+          "arrayChildren": null
+        }
+      ],
+      "name": "toggleTask",
+      "constant": false,
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "payable": false,
+      "gas": null
+    }
+  ]
+}
