@@ -1,3 +1,4 @@
+
 # Onchain Todo App
 
 A decentralized todo application built on Ethereum blockchain using Solidity smart contracts and a modern React frontend. Manage your tasks securely on-chain with advanced features like productivity analytics, filtering, and bulk operations.
@@ -198,3 +199,7 @@ If you encounter any issues or have questions:
 ---
 
 **Note**: This is a development project using local Hardhat network. For production deployment, additional security audits and optimizations would be required.
+
+# Blockchain-Todo
+A hardhat Blockchain and Metamask wallet Decentralised Todo List App
+
