@@ -42,7 +42,7 @@ A decentralized todo application built on Ethereum blockchain using Solidity sma
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/lankasreenaina/Blockchain-Todo>
 cd onchain-todo-app
 ```
 
